@@ -39,7 +39,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>com.yourcompany.App</mainClass>
+              <mainClass>com.caldalis.App</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -48,6 +48,33 @@
   </build>
 
   <dependencies>
+
+    <!-- 高性能工具库 -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.14.0</version> <!-- 字符串处理工具 -->
+    </dependency>
+
+    <!-- Lombok 依赖 -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.24</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- SLF4J 核心接口 -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.36</version>
+    </dependency>
+    <!-- 日志实现 -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.4.14</version>
+    </dependency>
 
     <!-- 单元测试 -->
     <dependency>
